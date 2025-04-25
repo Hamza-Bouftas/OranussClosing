@@ -6,11 +6,37 @@
   <title>انضم لمجموعة الواتساب</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #bgVideo {
+      position: fixed;
+      right: 0;
+      top: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .tape-content {
+      background-color: rgba(255, 255, 255, 0.95);
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 30px 60px 30px;
+      min-height: 100vh;
+      position: relative;
+      z-index: 1;
+      border-right: 8px solid #004aad;
+      border-left: 8px solid #FFD700;
     }
 
     header {
@@ -31,19 +57,27 @@
     .logo .yellow {
       color: #FFD700;
     }
-    .video-container {
-  position: relative;
-  width: 90%;
-  max-width: 700px;
-  margin: 30px auto 10px;
-}
 
-.video-container video {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+    h1 {
+      text-align: center;
+      color: black;
+      margin-top: 30px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 90%;
+      max-width: 700px;
+      margin: 30px auto 10px;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
     .main-content {
       display: flex;
       justify-content: center;
@@ -116,23 +150,34 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <span class="white">Oranus</span> <span class="yellow">Closing</span>
+  <!-- Background video -->
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="BGvideo.webm" type="video/webm" />
+    متصفحك لا يدعم تشغيل الفيديو بالخلفية.
+  </video>
+
+  <!-- Main tape-style content -->
+  <div class="tape-content">
+    <header>
+      <div class="logo">
+        <span class="white">Oranus</span> <span class="yellow">Closing</span>
+      </div>
+    </header>
+
+    <h1>شاهدي الفيديو التالي</h1>
+
+    <div class="video-container">
+      <video controls autoplay playsinline>
+        <source src="video.mp4" type="video/mp4">
+        المتصفح لا يدعم تشغيل الفيديو.
+      </video>
     </div>
-  </header>
-  <h1 style="text-align: center; color: black; margin-top: 30px;">شاهدي الفيديو التالي</h1>
-  <div class="video-container">
-    <video controls autoplay muted playsinline>
-      <source src="video.mp4" type="video/mp4">
-      المتصفح لا يدعم تشغيل الفيديو.
-    </video>
-  </div>
-  <div class="main-content">
-    <button class="btn" onclick="openModal()">انضم لمجموعة الواتساب</button>
+
+    <div class="main-content">
+      <button class="btn" onclick="openModal()">انضم لمجموعة الواتساب</button>
+    </div>
   </div>
 
-  <!-- Modal -->
   <!-- Modal -->
   <div class="modal" id="formModal">
     <div class="modal-content">
