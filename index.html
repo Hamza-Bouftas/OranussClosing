@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #000;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    header .highlight {
+      color: #FFED00;
+    }
+
+    main {
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+      font-family: 'Cairo', sans-serif;
+      padding: 14px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      width: 350px;
+    }
+
+    input[type="tel"] {
+      direction: rtl;
+      text-align: right;
+    }
+
+    .btn-submit {
+      margin: auto;
+      width: 200px;
+      font-family: 'Cairo', sans-serif;
+      padding: 14px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      transition: 0.3s ease;
+    }
+
+    .btn-submit:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.4rem;
+        padding: 16px 10px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      input,
+      .btn-submit {
+        font-size: 1rem;
+        padding: 12px;
+      }
+    }
+
+    .benefits {
+      color: white;
+      font-size: 1.1rem;
+      margin: 80px 0 20px; /* Space above and below the bullet points */
+      direction: rtl;
+    }
+
+    .social-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-links a {
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #004aad;
+    }
+   
+
+  </style>
+</head>
+<body>
+
+  <header>
+    ORANUS <span class="highlight">CLOSING</span>
+  </header>
+
+  <main>
+  <h1>ابدأ الآن: أول خطوة نحو دخل ثابت من المنزل</h1>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <div class="form-container">
+      <input type="hidden" name="access_key" value="e7a61c1d-d419-4a89-a1d0-b416a769f468">
+      <input type="text" name="name" placeholder="الاسم الكامل" required>
+      <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+      <button type="submit" class="btn-submit">إرسال</button>
+    </div>
+  </form>
+
+    <ul class="benefits">
+      <li>تحقق دخل ثابت من المنزل</li>
+      <li>كل ما تحتاجه هو هاتف وإنترنت</li>
+      <li>نظام مجرّب مع دعم مباشر</li>
+      <li>أرباح حقيقية أسبوعية</li>
+      <li>تعلم أسرار الإغلاق والتسويق</li>
+    </ul>
+
+    <!-- Social Media Links with Icons -->
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=61575691554541" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://www.instagram.com/hamza_team_closing/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+  
+  </main>
+</body>
+</html>
