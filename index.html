@@ -120,12 +120,17 @@
     }
 
     .social-links a {
-      font-size: 1.5rem;
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      transition: color 0.3s;
-    }
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
 
     .social-links a:hover {
       color: #004aad;
@@ -145,19 +150,21 @@
   <form action="https://api.web3forms.com/submit" method="POST">
     <div class="form-container">
       <input type="hidden" name="access_key" value="e7a61c1d-d419-4a89-a1d0-b416a769f468">
-      <label for="name">الإسم الكامل*<input type="text" name="name" placeholder="الاسم الكامل" required></label>
-      <label for="phone">الرقم الهاتفي*<input type="tel" name="phone" placeholder="رقم الهاتف" required></label>
-      <label for="capital">رأس المال المتوفر*<input type="text" name="capital" placeholder="رأس المال" required></label>
+      <label for="name">الإسم الكامل*</label>
+      <input type="text" name="name" id="name" placeholder="الاسم الكامل" required>
+      <label for="phone">الرقم الهاتفي*</label>
+      <input type="tel" name="phone" id="phone" placeholder="رقم الهاتف" required>
+      <label for="capital">رأس المال المتوفر*</label>
+      <input type="text" name="capital" id="capital" placeholder="رأس المال" required>  
       <button type="submit" class="btn-submit">إرسال</button>
     </div>
   </form>
 
     <ul class="benefits">
-      <li>تحقق دخل ثابت من المنزل</li>
+      <li>حقق دخل ثابت من المنزل</li>
       <li>كل ما تحتاجه هو هاتف وإنترنت</li>
       <li>نظام مجرّب مع دعم مباشر</li>
-      <li>أرباح حقيقية أسبوعية</li>
-      <li>تعلم أسرار الإغلاق والتسويق</li>
+      <li>تعلم أسرار البيع و الإقناع</li>
     </ul>
 
     <!-- Social Media Links with Icons -->
