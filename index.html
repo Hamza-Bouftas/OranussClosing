@@ -19,17 +19,25 @@
 }
 
     header {
-      background-color: #004aad;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-      font-size: 1.6rem;
-      font-weight: bold;
-    }
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 0; /* Remove padding from header */
+  margin: 0; /* Remove margin from header */
+  display: block; /* Ensure it takes up full width */
+}
 
-    header .highlight {
-      color: #FFED00;
-    }
+.header-text-container {
+  display: inline-block;
+  padding: 0px 40px; /* Adjust the padding for both sides */
+  font-size: 3rem; /* You can adjust the size of the text */
+  line-height: 1;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #FFED00;
+}
 
     main {
       padding: 30px 20px;
@@ -142,8 +150,10 @@
 <body>
   <div class="overlay">
   <header>
-    TEAM <span class="highlight">CLOSING</span>
-  </header>
+      <div class="header-text-container">
+        TEAM <span class="highlight">CLOSING</span>
+      </div>
+    </header>
 
   <main>
   <h1>ابدء الآن: أول خطوة نحو دخل ثابت من المنزل</h1>
