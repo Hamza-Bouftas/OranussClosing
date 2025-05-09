@@ -29,10 +29,14 @@
 
 .header-text-container {
   display: inline-block;
-  padding: 0px 40px; /* Adjust the padding for both sides */
-  font-size: 3rem; /* You can adjust the size of the text */
+  padding: 0px 40px;
+  font-size: clamp(1.5rem, 5vw, 3rem); /* responsive font size */
   line-height: 1;
   font-weight: bold;
+  white-space: nowrap; /* prevent wrapping */
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .highlight {
