@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
-  <link rel="icon" href="favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    body {
-      font-family: 'Cairo', sans-serif;
-      background-color: #000;
-      color: white;
-      margin: 0;
-      padding: 0;
-    }
+  body {
+  font-family: 'Cairo', sans-serif;
+  background: url('pic1.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 
     header {
       background-color: #004aad;
@@ -80,6 +80,7 @@
       border: none;
       border-radius: 10px;
       transition: 0.3s ease;
+      margin-top: 50px;
     }
 
     .btn-submit:hover {
@@ -133,27 +134,29 @@
   </style>
 </head>
 <body>
-
+  <div class="overlay">
   <header>
-    ORANUS <span class="highlight">CLOSING</span>
+    TEAM <span class="highlight">CLOSING</span>
   </header>
 
   <main>
-  <h1>ابدء الآن: أول خطوة نحو عمل حر من المنزل</h1>
+  <h1>ابدء الآن: أول خطوة نحو دخل ثابت من المنزل</h1>
   <form action="https://api.web3forms.com/submit" method="POST">
     <div class="form-container">
       <input type="hidden" name="access_key" value="e7a61c1d-d419-4a89-a1d0-b416a769f468">
-      <input type="text" name="name" placeholder="الاسم الكامل" required>
-      <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+      <label for="name">الإسم الكامل*<input type="text" name="name" placeholder="الاسم الكامل" required></label>
+      <label for="phone">الرقم الهاتفي*<input type="tel" name="phone" placeholder="رقم الهاتف" required></label>
+      <label for="phone">رأس المال المتوفر*<input type="tel" name="phone" placeholder="رقم الهاتف" required></label>
       <button type="submit" class="btn-submit">إرسال</button>
     </div>
   </form>
 
     <ul class="benefits">
-      <li>تحقيق دخل ثابت من المنزل</li>
+      <li>تحقق دخل ثابت من المنزل</li>
       <li>كل ما تحتاجه هو هاتف وإنترنت</li>
       <li>نظام مجرّب مع دعم مباشر</li>
-      <li>تعلم أسرار البيع و الإقناع</li>
+      <li>أرباح حقيقية أسبوعية</li>
+      <li>تعلم أسرار الإغلاق والتسويق</li>
     </ul>
 
     <!-- Social Media Links with Icons -->
@@ -163,5 +166,6 @@
     </div>
   
   </main>
+</div>
 </body>
 </html>
